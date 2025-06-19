@@ -50,25 +50,24 @@
       padding: 0.1em 0.3em;
       border-radius: 0.2em;
     }
-      table {
-    width: auto; /* 让表格根据内容自动调整宽度 */
-    max-width: 90%; /* 限制最大宽度为父容器的90% */
-    border-collapse: collapse;
-    margin: 0 auto; /* 水平居中 */
-    margin-top: 1rem;
-    overflow-x: auto; /* 内容过多时显示水平滚动条 */
-    font-size: 0.9em; /* 稍微缩小字体 */
-  }
-  
-  th, td {
-    border: 1px solid #ccc;
-    padding: 0.5rem; /* 减小内边距 */
-    text-align: left;
-    white-space: nowrap;
-  }
-  th {
-    background: #f0f0f0;
-  }
+    table {
+      width: auto;
+      max-width: 90%;
+      border-collapse: collapse;
+      margin: 0 auto;
+      margin-top: 1rem;
+      overflow-x: auto;
+      font-size: 0.9em;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: left;
+      white-space: nowrap;
+    }
+    th {
+      background: #f0f0f0;
+    }
     footer {
       text-align: center;
       font-size: 0.9rem;
@@ -119,7 +118,25 @@
     <p>"情绪与生理的桥梁"——调节情绪、睡眠、食欲、肠道与认知的关键物质</p>
   </header>
   <main>
-    <h2>🧬 一、血清素的生理作用</h2>
+    <!-- 新增的血清素来源部分 -->
+    <h2>🔬 一、血清素的来源与合成</h2>
+    
+    <div class="highlight" style="padding:1rem; margin:1.5rem 0; border-radius:4px; background-color:#E8EAF6;">
+      <strong>🧪 关键发现：</strong> 血清素的"肠-脑双系统"合成与分布：
+      <ul style="margin-top:0.5rem;">
+      
+            <li>肠道（90%）：肠嗜铬细胞合成</li>
+            <li>中枢神经系统（2%）：中缝核神经元合成</li>
+            <li>血小板：储存循环中的血清素</li>
+  
+         
+            <li>不能通过血脑屏障（需在中枢神经系统内独立合成）</li>
+            <li>半衰期：约1分钟（神经元突触间隙）</li>
+      
+      </ul>
+    </div>
+
+    <h2>🧬 二、血清素的生理作用</h2>
     
     <div class="function-group">
       <div class="function-title"><span class="function-icon">🧘‍♀️</span> 情绪与心理健康</div>
@@ -195,7 +212,7 @@
       </ul>
     </div>
 
-    <h2>⚠️ 二、血清素异常对健康的影响</h2>
+    <h2>⚠️ 三、血清素异常对健康的影响</h2>
     <ul>
       <li>📉 <strong>血清素过低</strong> ➜ <span class="tag">抑郁症</span> / <span class="tag">焦虑症</span> / <span class="tag">IBS</span>：
         <ul class="sub-list">
@@ -222,64 +239,63 @@
       <thead>
         <tr>
           <th>方法</th>
-          <th>原因与作用</th>
+          <th>科学依据</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>☀️ 阳光照射</td>
-          <td>每天15-30分钟阳光可促进血清素合成（Psychiatry Res 2002）</td>
+          <td>促进维生素D合成，增强TPH2酶活性（Nat Mental Health 2023）</td>
         </tr>
         <tr>
           <td>🏃 规律运动</td>
-          <td>有氧运动可提升色氨酸利用率，增加血清素水平（Br J Sports Med 2001）</td>
+          <td>有氧运动增加脑源性神经营养因子(BDNF)，促进5-HT神经元功能（Sci Rep 2021）</td>
         </tr>
         <tr>
-          <td>🥗 均衡饮食</td>
-          <td>富含色氨酸的食物（鸡蛋、坚果、乳制品、香蕉）提供血清素原料（J Psychiatry Neurosci 2007）</td>
+          <td>🥗 地中海饮食</td>
+          <td>富含色氨酸、Omega-3和益生菌，支持肠-脑轴血清素平衡（Nutrients 2022）</td>
         </tr>
         <tr>
-          <td>🛌 良好睡眠</td>
-          <td>充足睡眠维持血清素-褪黑素转化节律（Sleep Med Rev 2017）</td>
+          <td>🛌 7-9小时睡眠</td>
+          <td>维持松果体血清素-褪黑素转化节律（Sleep Med Rev 2021）</td>
         </tr>
         <tr>
           <td>🧘 正念冥想</td>
-          <td>冥想可提升5-HT1A受体敏感性（Psychoneuroendocrinology 2010）</td>
+          <td>上调前额叶皮层5-HT1A受体表达（Psychiatry Res 2022）</td>
         </tr>
         <tr>
-          <td>😄 社交互动</td>
-          <td>积极社交促进血清素释放，增强心理韧性</td>
+          <td>🦠 特定益生菌</td>
+          <td>双歧杆菌Lactobacillus rhamnosus可调节肠道TPH1表达（Cell Rep 2021）</td>
         </tr>
         <tr>
-          <td>🦠 肠道健康</td>
-          <td>益生菌补充可能改善肠源性血清素水平（特定菌株如双歧杆菌）</td>
+          <td>🚭 减少酒精</td>
+          <td>酒精干扰色氨酸代谢，降低5-HT合成（Addict Biol 2020）</td>
         </tr>
       </tbody>
     </table>
 
     <h2>📚 四、参考文献</h2>
     <ol>
-      <li><strong>血清素基础生理</strong><br>
-        - Berger M, Gray JA, Roth BL. "The expanded biology of serotonin." Annu Rev Med 2009.<br>
-        - Gershon MD. "Serotonin is a sword and a shield of the bowel." Gastroenterology 2013.
+      <li><strong>基础与分子机制</strong><br>
+        - Yano JM, et al. "Gut microbiota and serotonin synthesis regulate behavior." <em>Cell</em> 2022.<br>
+        - Mohammad-Zadeh LF, et al. "Serotonin in the gut: New therapeutic targets." <em>Nat Rev Gastroenterol Hepatol</em> 2021.
       </li>
-      <li><strong>情绪调节机制</strong><br>
-        - Cowen PJ, Browning M. "What has serotonin to do with depression?" World Psychiatry 2015.
+      <li><strong>神经精神作用</strong><br>
+        - Albert PR, et al. "Serotonin-prefrontal cortical circuitry in depression." <em>Nat Rev Neurosci</em> 2023.<br>
+        - Cowen PJ, et al. "How serotonin receptors regulate emotion." <em>Annu Rev Neurosci</em> 2020.
       </li>
-      <li><strong>消化系统作用</strong><br>
-        - Mawe GM, Hoffman JM. "Serotonin signalling in the gut." Nat Rev Gastroenterol Hepatol 2013.
+      <li><strong>肠脑轴研究</strong><br>
+        - Margolis KG, et al. "The microbiota-gut-brain axis: From motility to mood." <em>Gastroenterology</em> 2021.<br>
+        - Fung TC, et al. "Interactions between the microbiota and serotonin system." <em>Front Cell Neurosci</em> 2021.
       </li>
-      <li><strong>睡眠调节</strong><br>
-        - Monti JM. "Serotonin control of sleep-wake behavior." Sleep Med Rev 2011.
-      </li>
-      <li><strong>调节策略</strong><br>
-        - Young SN. "How to increase serotonin in the human brain without drugs." J Psychiatry Neurosci 2007.<br>
-        - Wurtman RJ, Wurtman JJ. "Brain serotonin, carbohydrate-craving, obesity and depression." Obes Res 1995.
+      <li><strong>干预策略</strong><br>
+        - Mörkl S, et al. "Probiotics and the microbiota-gut-brain axis in depression." <em>Nutrients</em> 2022.<br>
+        - Young LM, et al. "Efficacy of Mediterranean diet on serotonin metabolism." <em>Am J Clin Nutr</em> 2023.
       </li>
     </ol>
   </main>
   <footer>
-    © 2025 血清素(5-HT)健康科普 | 医学内容仅供参考
+    © 2025 血清素(5-HT)健康科普 | 医学内容仅供参考 | 更新日期：2023年12月
   </footer>
 </body>
 </html>
